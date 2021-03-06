@@ -4,9 +4,9 @@
 int main()
 {
 	std::cout << "How many surnames are you going to insert?" << std::endl;
-	int n; //number of surnames
+	int n; 
 	std::cin >> n;
-	std::cout << "Strings or C-like char* arrays? Choose 0 or 1" << std::endl;
+	std::cout << "Strings or C-like char* arrays? Choose 1 or 0" << std::endl;
 	bool ifString;
 	std::cin >> ifString;
 	if (ifString)
@@ -31,7 +31,7 @@ int main()
 		{
 			std::cout << "How many characters does your next surname have?" << std::endl;
 			std::cin >> length;
-			arrayC[i] = new char[length];
+			arrayC[i] = new char[length + 1];
 			std::cout << "Write next surname" << std::endl;
 			std::cin >> arrayC[i];
 		}
